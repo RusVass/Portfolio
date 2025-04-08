@@ -1,6 +1,5 @@
 import styles from "./About.module.scss";
 import { Typography, Box } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import HTML from "./Logos/HTML.svg";
 import CSS from "./Logos/CSS.svg";
 import JS from "./Logos/JS.svg";
@@ -48,7 +47,7 @@ const groupedLogos = {
 function About() {
   return (
       <div className={styles.About}>
-        <Typography variant="h2" sx={{ color: '#98C1D9' }}>My knowledges</Typography>
+        <Typography className={styles.title} variant="h2" sx={{ color: '#98C1D9', fontSize: 36 }}>My knowledges</Typography>
 
         {Object.entries(groupedLogos).map(([category, logos]) => (
             <Box key={category} className={styles.categorySection}>
