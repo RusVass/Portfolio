@@ -11,8 +11,8 @@ function Home() {
                 justifyContent="space-evenly"
                 flexDirection="row-reverse"
             >
-                <img src="../../../public/sticker.webp" alt="My avatar" className={styles.img} />
-
+                {/*<img src="../../../public/sticker.webp" alt="My avatar" className={styles.img} />*/}
+                <img src="/sticker.webp" alt="My avatar" className={styles.img}/>
                 <Box
                     display="flex"
                     alignItems="center"
@@ -25,81 +25,90 @@ function Home() {
                         color: "#ffffff", // устанавливаем белый цвет всему содержимому
                     }}
                 >
-                    <Typography variant="h4" sx={{ fontWeight: "bold", color: "#ffffff",  fontSize: "32px" , marginLeft: -97, marginBottom: 5 }}>
+                    <Typography variant="h4" sx={{
+                        fontWeight: "bold",
+                        color: "#ffffff",
+                        fontSize: "32px",
+                        marginLeft: -97,
+                        marginBottom: 5
+                    }}>
                         Ruslan Vasiliev – Front-End Developer
                     </Typography>
 
-                    <Table sx={{ minWidth: 650 }}>
+                    <Table sx={{minWidth: 650}}>
                         <TableBody>
 
                             <TableRow>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
                                     <strong>Summary</strong>
                                 </TableCell>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
-                                    Front-end Developer with 1 year of experience building responsive, high-performance web apps using React, Redux Toolkit, Formik, and Material UI.
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
+                                    Front-end Developer with 1 year of experience building responsive, high-performance
+                                    web apps using React, Redux Toolkit, Formik, and Material UI.
                                 </TableCell>
                             </TableRow>
 
                             <TableRow>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
                                     <strong>Tech Skills</strong>
                                 </TableCell>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
-                                    React, Redux Toolkit, Formik, Material UI, Bootstrap, HTML, CSS/SCSS, Gulp, Node.js, Express.js, MongoDB, CI/CD, Git, Yup.
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
+                                    React, Redux Toolkit, Formik, Material UI, Bootstrap, HTML, CSS/SCSS, Gulp, Node.js,
+                                    Express.js, MongoDB, CI/CD, Git, Yup.
                                 </TableCell>
                             </TableRow>
 
                             <TableRow>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
                                     <strong>Tools</strong>
                                 </TableCell>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
                                     WebStorm, Jira, Git, Postman, DevTools, Jenkins, Axios, Figma, Vercel.
                                 </TableCell>
                             </TableRow>
 
                             <TableRow>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
                                     <strong>Languages</strong>
                                 </TableCell>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
-                                    Ukrainian – Native<br />
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
+                                    Ukrainian – Native<br/>
                                     English – Intermediate
                                 </TableCell>
                             </TableRow>
 
                             <TableRow>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
                                     <strong>Courses</strong>
                                 </TableCell>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
-                                    2024 – Front-End (DAN.IT)<br />
-                                    2024 – TypeScript (Hillel IT School)<br />
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
+                                    2024 – Front-End (DAN.IT)<br/>
+                                    2024 – TypeScript (Hillel IT School)<br/>
                                     2024 – English (Cambridge Assessment)
                                 </TableCell>
                             </TableRow>
 
                             <TableRow>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
                                     <strong>Experience</strong>
                                 </TableCell>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
-                                    <strong>TechWave Solutions</strong> – Front-End Developer (04/2025 – Present)<br />
-                                    • Built UI with React and Redux Toolkit<br />
-                                    • Styled with Material UI and SCSS<br />
-                                    • Worked with APIs using Axios/FETCH<br />
-                                    • Backend participation with Node.js, Express.js<br />
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
+                                    <strong>TechWave Solutions</strong> – Front-End Developer (04/2025 – Present)<br/>
+                                    • Built UI with React and Redux Toolkit<br/>
+                                    • Styled with Material UI and SCSS<br/>
+                                    • Worked with APIs using Axios/FETCH<br/>
+                                    • Backend participation with Node.js, Express.js<br/>
                                     • Tested with Jest
                                 </TableCell>
                             </TableRow>
 
                             <TableRow>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
                                     <strong>Link</strong>
                                 </TableCell>
-                                <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
-                                    <Link href="https://gitlab.com/VassRus/portfolio" sx={{ fontSize: "18px" }} target="_blank" rel="noopener" underline="hover" >GitHub</Link><br />
+                                <TableCell sx={{color: "#ffffff", fontSize: "18px"}}>
+                                    <Link href="https://gitlab.com/VassRus/portfolio" sx={{fontSize: "18px"}}
+                                          target="_blank" rel="noopener" underline="hover">GitHub</Link><br/>
                                     {/*<Link href="https://linkedin.com/in/your-profile"  sx={{  fontSize: "18px" }}target="_blank" rel="noopener" underline="hover" >LinkedIn</Link>*/}
                                 </TableCell>
                             </TableRow>
@@ -113,7 +122,6 @@ function Home() {
 }
 
 export default Home;
-
 
 
 /*import styles from "./Home.module.scss";
