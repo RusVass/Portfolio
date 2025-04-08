@@ -99,7 +99,7 @@ function Home() {
                                     <strong>Link</strong>
                                 </TableCell>
                                 <TableCell sx={{ color: "#ffffff", fontSize: "18px" }}>
-                                    <Link href="https://gitlab.com/VassRus/my-vue-app-practice" sx={{ fontSize: "18px" }} target="_blank" rel="noopener" underline="hover" >GitHub</Link><br />
+                                    <Link href="https://gitlab.com/VassRus/portfolio" sx={{ fontSize: "18px" }} target="_blank" rel="noopener" underline="hover" >GitHub</Link><br />
                                     {/*<Link href="https://linkedin.com/in/your-profile"  sx={{  fontSize: "18px" }}target="_blank" rel="noopener" underline="hover" >LinkedIn</Link>*/}
                                 </TableCell>
                             </TableRow>
