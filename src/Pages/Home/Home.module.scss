@@ -1,26 +1,126 @@
-.img {
-    width: 25%;
-    position: fixed;
-    top: 300px;
-    left: 67%;
-}
-//
-//.home {
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//    justify-content: center;
-//    align-self: center;
-//    margin: 0 100px;
-//    margin-top: 80px;
-//    gap: 5px;
-//}
+// Основний темний фон з баклажановим градієнтом (темніший зверху, насиченіший знизу)
+$eggplant-color-1: #1f0b18; // Темніший баклажановий відтінок
+$eggplant-color-2: #471035; // Світліший баклажановий відтінок
+
 .home {
+    background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);
+    color: #ffffff;
     padding: 20px;
-    @media (max-width: 768px) {
-        .img {
-            width: 150px;
-            margin: 0 auto;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    .content {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: left;
+
+        @media (max-width: 768px) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 16px;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+    }
+
+    .img {
+        width: 250px;
+        height: auto;
+        transition: transform 0.3s ease;
+
+        @media (max-width: 768px) {
+            width: 180px;
+        }
+
+        @media (max-width: 480px) {
+            width: 140px;
+        }
+    }
+
+    // Анімація зображення
+    .imgAnimation {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    // Анімація для титулів і клітинок таблиці
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    // Анімація для тексту таблиці
+    .fadeIn {
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+    }
+
+    .cellTitle {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        vertical-align: top;
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+    }
+
+    .cellText {
+        color: #ffffff;
+        font-size: 16px;
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+
+        a {
+            color: #90caf9;
         }
     }
 }
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .cellTitle, .cellText {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .cellTitle, .cellText {
+        font-size: 12px;
+    }
+}
+

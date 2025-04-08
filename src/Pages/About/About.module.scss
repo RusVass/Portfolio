@@ -1,11 +1,114 @@
-img {
-  width: 100px;
+// Змінні для кольорів та відступів
+$eggplant-color-1: #1f0b18; // Темніший баклажановий відтінок
+$eggplant-color-2: #471035; // Світліший баклажановий відтінок
+$font-color: #98C1D9;
+
+// Основний стиль для About сторінки
+.About {
+    background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start; // Піднімає контент до верху
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    .MuiTypography-root {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
-.About {
+// Контейнер для блоків на сторінці
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    background-color: rgba(83, 58, 123, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    animation: fadeIn 1s ease-out;
+    justify-items: center;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+// Стилі для окремих блоків з логотипами
+.logo {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 90px auto;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(83, 58, 123, 0.7);
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    max-width: 150px; // однакова ширина блоків
+    height: 110px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: rgba(83, 58, 123, 1);
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logoText {
+        color: $font-color;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    &:nth-child(odd) {
+        animation-delay: 0.2s;
+    }
+
+    &:nth-child(even) {
+        animation-delay: 0.4s;
+    }
+}
+
+// Анімація контейнера
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// Анімація появи кожної іконки
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
