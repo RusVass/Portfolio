@@ -11,7 +11,7 @@ function Home() {
                 justifyContent="space-evenly"
                 flexDirection="row-reverse"
             >
-                <img src="/public/sticker.webp" alt="My avatar" className={styles.img} />
+                <img src="../../../public/sticker.webp" alt="My avatar" className={styles.img} />
 
                 <Box
                     display="flex"
