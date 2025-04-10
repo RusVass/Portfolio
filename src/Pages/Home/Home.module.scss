@@ -3,7 +3,13 @@ $eggplant-color-1: #1f0b18; // Темніший баклажановий від�
 $eggplant-color-2: #471035; // Світліший баклажановий відтінок
 
 .home {
-    background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);
+  /*  background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);*/
+
+    background-image: url('https://wallpapercave.com/wp/wp9109600.jpg');
+    //background-image: url('https://wallpapercave.com/wp/wp2465933.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
     padding: 20px;
     min-height: 100vh;

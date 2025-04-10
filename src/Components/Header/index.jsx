@@ -10,7 +10,8 @@ function Header() {
         <AppBar
           sx={{
             position: "sticky",
-            backgroundColor: "#25171A",
+            // backgroundColor: "#25171A",
+            backgroundColor: "black",
             color: "white",
             heidth: "100px",
             top: "0",

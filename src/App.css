@@ -24,9 +24,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-image: url('/Background.png');
-	/*background-image: url('public/Background.png');*/
-	/*background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/images/bg.jpg");*/
 	background-size: cover;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -49,5 +46,5 @@ table {
 }
 a {
 	text-decoration: none;
-	color: #533A7B
+	color: rgba(255, 255, 255, 0.49)
 }
