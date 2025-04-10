@@ -79,16 +79,16 @@ function Home() {
                                 </TableCell>
                             </TableRow>
 
-                            <TableRow>
-                                <TableCell className={`${styles.cellTitle} ${styles.fadeIn}`}>
-                                    <strong>Link</strong>
-                                </TableCell>
-                                <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
-                                    <Link href="https://gitlab.com/VassRus/portfolio" target="_blank" rel="noopener" underline="hover">
-                                        GitHub
-                                    </Link>
-                                </TableCell>
-                            </TableRow>
+                            {/*<TableRow>*/}
+                            {/*    <TableCell className={`${styles.cellTitle} ${styles.fadeIn}`}>*/}
+                            {/*        <strong>Link</strong>*/}
+                            {/*    </TableCell>*/}
+                            {/*    <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>*/}
+                            {/*        <Link href="https://gitlab.com/VassRus/portfolio" target="_blank" rel="noopener" underline="hover">*/}
+                            {/*            GitHub*/}
+                            {/*        </Link>*/}
+                            {/*    </TableCell>*/}
+                            {/*</TableRow>*/}
                         </TableBody>
                     </Table>
                 </div>

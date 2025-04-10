@@ -1,10 +1,11 @@
 // Основний темний фон з баклажановим градієнтом (темніший зверху, насиченіший знизу)
-$eggplant-color-1: #1f0b18; // Темніший баклажановий відтінок
-$eggplant-color-2: #471035; // Світліший баклажановий відтінок
-
+//$eggplant-color-1: #1f0b18; // Темніший баклажановий відтінок
+//$eggplant-color-2: #471035; // Світліший баклажановий відтінок
+$eggplant-color-1: #010308; // Темніший  відтінок
+$eggplant-color-2: #263636; // Світліший  відтінок
 .home {
   /*  background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);*/
-
+   // background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);
     background-image: url('https://wallpapercave.com/wp/wp9109600.jpg');
     //background-image: url('https://wallpapercave.com/wp/wp2465933.jpg');
     background-size: cover;
