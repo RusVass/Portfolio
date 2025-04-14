@@ -5,15 +5,15 @@ $font-color: #98C1D9;
 
 // Основний стиль для About сторінки
 .About {
-    background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);
-    //background-image: url('https://wallpapercave.com/wp/wp9109600.jpg');
+   // background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);
+    background-image: url('https://wallpapercave.com/wp/wp9109600.jpg');
     ////background-image: url('https://wallpapercave.com/wp/wp2465933.jpg');
-    //background-size: cover;
-    //background-position: center;
-    //background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 20px;
-    min-height: 100vh;
+    min-height: 160vh;
     display: flex;
     justify-content: flex-start; // Піднімає контент до верху
     align-items: center;
