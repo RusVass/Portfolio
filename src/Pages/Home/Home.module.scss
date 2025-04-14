@@ -5,15 +5,15 @@ $eggplant-color-1: #010308; // Темніший  відтінок
 $eggplant-color-2: #1b2525; // Світліший  відтінок
 .home {
   /*  background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);*/
-    background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);
-    //background-image: url('https://wallpapercave.com/wp/wp9109600.jpg');
+    //background: linear-gradient(to bottom, $eggplant-color-1, $eggplant-color-2);
+    background-image: url('https://wallpapercave.com/wp/wp9109600.jpg');
    // background-image: url('https://wallpapercave.com/wp/wp2465933.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     color: #ffffff;
     padding: 20px;
-    min-height: 100vh;
+    min-height: 150vh;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     .container {
