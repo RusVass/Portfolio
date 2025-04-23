@@ -50,7 +50,7 @@ function Home() {
                                 </TableCell>
                                 <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
                                     Ukrainian – Native<br />
-                                    English – Intermediate
+                                    English – Upper-Intermediate
                                 </TableCell>
                             </TableRow>
 
