@@ -1,12 +1,15 @@
+
+
+
 import styles from "./Home.module.scss";
-import { Typography, Box, Link, Table, TableBody, TableCell, TableRow } from "@mui/material";
+import { Typography, Link, Table, TableBody, TableCell, TableRow } from "@mui/material";
 import "@fontsource/roboto/400.css";
 
 function Home() {
     return (
         <div className={styles.home}>
             <div className={styles.container}>
-                <img src="/sticker.webp" alt="My avatar" className={`${styles.img} ${styles.imgAnimation}`} />
+                <img src="/stickerMe.webp" alt="My avatar" className={`${styles.img} ${styles.imgAnimation}`} />
 
                 <div className={styles.content}>
                     <Typography variant="h4" className={`${styles.title} ${styles.titleAnimation}`}>
