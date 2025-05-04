@@ -33,7 +33,7 @@ function Home() {
                                     <strong>Tech Skills</strong>
                                 </TableCell>
                                 <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
-                                    React, Redux Toolkit, Formik, Material UI, Bootstrap, HTML, CSS/SCSS, Gulp, Node.js,
+                                    React, Redux Toolkit, React Native, Formik, Material UI, Bootstrap, HTML, CSS/SCSS, Gulp, Node.js,
                                     Express.js, MongoDB, CI/CD, Git, Yup.
                                 </TableCell>
                             </TableRow>
