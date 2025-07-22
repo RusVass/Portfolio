@@ -61,9 +61,9 @@ function Home() {
                                     <strong>Courses</strong>
                                 </TableCell>
                                 <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
-                                    2024 – Front-End (DAN.IT)<br />
-                                    2024 – TypeScript (Hillel IT School)<br />
-                                    2023 - Hillel IT School (JavaScript Automation)
+                                    2024 – Front-End (DAN.IT)<br/>
+                                    2024 – TypeScript (Hillel IT School)<br/>
+                                    2023 - JavaScript Automation (Hillel IT School)<br/>
                                     2025 – English (Cambridge Assessment)
                                 </TableCell>
                             </TableRow>
@@ -75,11 +75,14 @@ function Home() {
                                 <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
                                     <strong>TechWave Solutions</strong> – Front-End, Mobile & Web Developer (React / React Native) <br />
                                     • Developed cross-platform mobile applications using React Native CLI for both iOS and Android, focusing on performance and native user experience.<br />
-                                    • Built UI with React/Redux Toolkit<br />
+                                    • Built responsive UIs for web apps using React and MUI (Material UI v5).<br />
+                                    • Integrated Firebase Authentication and Google Sign-In, managing secure session storage via AsyncStorage.<br />
+                                    • Built flexible and nested navigation flows using React Navigation v6 (stack, tab, drawer).<br />
+                                    • Used Redux Toolkit for global state management with slices, middleware, and selectors.<br />
                                     • Styled with Material UI and SCSS<br />
-                                    • Worked with APIs using Axios/FETCH<br />
-                                    • Backend participation with Node.js, Express.js<br />
-                                    • Tested with Jest
+                                    • Connected the app to REST APIs via Axios and Fetch, handling asynchronous data flows and error boundaries.<br />
+                                    • Collaborated on backend logic using Node.js and Express.js, assisting in API design and implementation.<br />
+                                    • Wrote unit tests using Jest, ensuring cross-platform reliability and stable application behavior.
                                 </TableCell>
                             </TableRow>
 
