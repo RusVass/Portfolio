@@ -64,7 +64,8 @@ function Home() {
                                 <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
                                     2024 – Front-End (DAN.IT)<br />
                                     2024 – TypeScript (Hillel IT School)<br />
-                                    2024 – English (Cambridge Assessment)
+                                    2023 - Hillel IT School (JavaScript Automation)
+                                    2025 – English (Cambridge Assessment)
                                 </TableCell>
                             </TableRow>
 
@@ -82,6 +83,7 @@ function Home() {
                                     • Tested with Jest
                                 </TableCell>
                             </TableRow>
+
 
                             <TableRow>
                                 <TableCell className={`${styles.cellTitle} ${styles.fadeIn}`}>
