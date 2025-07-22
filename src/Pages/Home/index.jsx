@@ -24,7 +24,7 @@ function Home() {
                                 </TableCell>
                                 <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
                                     Front-end Developer with 1 year of experience building responsive, high-performance
-                                    web apps using React, Redux Toolkit, Formik, and Material UI.
+                                    Web/Mobile apps using React, React Native, Redux Toolkit, Formik, and Material UI.
                                 </TableCell>
                             </TableRow>
 
@@ -73,8 +73,9 @@ function Home() {
                                     <strong>Experience</strong>
                                 </TableCell>
                                 <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
-                                    <strong>TechWave Solutions</strong> – Front-End Developer (04/2025 – Present)<br />
-                                    • Built UI with React and Redux Toolkit<br />
+                                    <strong>TechWave Solutions</strong> – Front-End, Mobile & Web Developer (React / React Native) <br />
+                                    • Developed cross-platform mobile applications using React Native CLI for both iOS and Android, focusing on performance and native user experience.<br />
+                                    • Built UI with React/Redux Toolkit<br />
                                     • Styled with Material UI and SCSS<br />
                                     • Worked with APIs using Axios/FETCH<br />
                                     • Backend participation with Node.js, Express.js<br />
