@@ -23,8 +23,7 @@ function Home() {
                                     <strong>Summary</strong>
                                 </TableCell>
                                 <TableCell className={`${styles.cellText} ${styles.fadeIn}`}>
-                                    Front-end Developer with 1 year of experience building responsive, high-performance
-                                    Web/Mobile apps using React, React Native, Redux Toolkit, Formik, and Material UI.
+                                    Versatile Front-End, Mobile & Web Developer with over a year of hands-on experience delivering high-performance applications using React and React Native CLI. Skilled at architecting scalable, maintainable code with Redux Toolkit, Formik, and Material UI, and integrating robust authentication flows via Firebase and Google Sign-In. Proven track record of translating complex business requirements into intuitive user experiences, rapidly diagnosing and fixing bugs, and collaborating across the full stack (Node.js/Express) to ship reliable solutions on schedule.
                                 </TableCell>
                             </TableRow>
 
