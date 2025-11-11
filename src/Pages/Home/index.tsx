@@ -155,18 +155,18 @@ function Home(): JSX.Element {
             <a href="mailto:ruslan.vasiliev.dev@gmail.com" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
               ruslan.vasiliev.dev@gmail.com
             </a>
-          </div>
+                </div>
         </aside>
         <div className="flex w-full flex-col gap-6">
           <div className="grid gap-6 lg:grid-cols-2">
             {profileSections.map((section) => (
               <Section key={section.id} section={section} />
             ))}
-          </div>
+            </div>
         </div>
       </section>
-    </div>
-  );
+        </div>
+    );
 }
 
 export default Home;

@@ -98,25 +98,16 @@ function Section({ section }: SectionProps): JSX.Element {
                     const trimmedValue = value.trim();
                     const isPhone =
                       lowerLabel.includes("phone") || lowerLabel.includes("mobile") || trimmedValue.startsWith("+");
-                    const isEmail = lowerLabel.includes("mail") || trimmedValue.includes("@");
                     const isTelegram = lowerLabel.includes("telegram") || trimmedValue.startsWith("@");
+                    const isEmail =
+                      lowerLabel.includes("mail") ||
+                      (trimmedValue.includes("@") && !isTelegram && !lowerLabel.includes("telegram"));
 
                     if (isPhone) {
                       const phoneHref = trimmedValue.replace(/[^+\d]/g, "");
                       return (
                         <a
                           href={`tel:${phoneHref}`}
-                          className="text-primary underline-offset-4 hover:text-primary/80 hover:underline"
-                        >
-                          {value}
-                        </a>
-                      );
-                    }
-
-                    if (isEmail) {
-                      return (
-                        <a
-                          href={`mailto:${trimmedValue}`}
                           className="text-primary underline-offset-4 hover:text-primary/80 hover:underline"
                         >
                           {value}
@@ -131,6 +122,17 @@ function Section({ section }: SectionProps): JSX.Element {
                           href={`https://t.me/${username}`}
                           target="_blank"
                           rel="noopener noreferrer"
+                          className="text-primary underline-offset-4 hover:text-primary/80 hover:underline"
+                        >
+                          {value}
+                        </a>
+                      );
+                    }
+
+                    if (isEmail) {
+                      return (
+                        <a
+                          href={`mailto:${trimmedValue}`}
                           className="text-primary underline-offset-4 hover:text-primary/80 hover:underline"
                         >
                           {value}

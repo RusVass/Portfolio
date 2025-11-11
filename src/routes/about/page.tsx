@@ -88,8 +88,15 @@ interface LogoProps {
 }
 
 function Logo({ logo, label }: LogoProps): JSX.Element {
+  const commonClasses =
+    "relative z-10 h-12 w-12 rounded-full bg-background/80 p-3 shadow-[0_12px_35px_rgba(15,23,42,0.45)] transition-all duration-500 ease-out group-hover:scale-130 group-hover:-translate-y-1.5 group-hover:shadow-[0_20px_60px_rgba(56,189,248,0.45)]";
+
   if (logo.kind === "asset") {
-    return <img src={logo.src} alt={logo.alt} className="h-12 w-12" loading="lazy" />;
+    return (
+      <div className={commonClasses}>
+        <img src={logo.src} alt={logo.alt} className="h-full w-full rounded-full object-contain" loading="lazy" />
+      </div>
+    );
   }
 
   const IconComponent = iconRegistry[logo.name];
@@ -102,17 +109,14 @@ function Logo({ logo, label }: LogoProps): JSX.Element {
       .slice(0, 2)
       .toUpperCase();
 
-    return (
-      <div
-        aria-hidden
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/60 text-sm font-semibold text-foreground"
-      >
-        {initials}
-      </div>
-    );
+    return <div aria-hidden className={cn(commonClasses, "flex items-center justify-center text-sm font-semibold text-foreground")}>{initials}</div>;
   }
 
-  return <IconComponent aria-hidden className="h-12 w-12" title={label} />;
+  return (
+    <div className={commonClasses}>
+      <IconComponent aria-hidden className="h-full w-full" title={label} />
+    </div>
+  );
 }
 
 function About(): JSX.Element {
@@ -145,12 +149,24 @@ function About(): JSX.Element {
                   <article
                     key={label}
                     className={cn(
-                      "flex items-center gap-4 rounded-xl border border-border/40 bg-background/60 p-4 transition-transform",
+                      "group relative flex items-center gap-4 overflow-hidden rounded-xl border border-border/40 bg-background/60 p-4 transition-transform",
                       "hover:-translate-y-1 hover:shadow-lg",
                     )}
                   >
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl"
+                    />
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute inset-0 rounded-xl border border-transparent transition-all duration-500 ease-out group-hover:border-primary/40 group-hover:shadow-[0_8px_35px_rgba(56,189,248,0.35)]"
+                    />
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute inset-4 rounded-full bg-primary/10 opacity-0 blur-lg transition-opacity duration-500 ease-out group-hover:opacity-100"
+                    />
                     <Logo logo={logo} label={label} />
-                    <p className="text-sm font-medium text-foreground">{label}</p>
+                    <p className="relative z-10 text-sm font-medium text-foreground">{label}</p>
                   </article>
                 ))}
               </CardContent>
