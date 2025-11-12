@@ -2,8 +2,8 @@ import type { PageMetadata } from "../../seo/site-metadata";
 import { siteBaseUrl } from "../../seo/site-metadata";
 
 export const aboutMetadata: PageMetadata = {
-  title: "Навыки и стек — Ruslan Vasiliev",
-  description: "Стек фронтенд, мобильной и серверной разработки: React, React Native, Node.js, DevTools, CI/CD.",
+  title: "Skills & Tech Stack — Ruslan Vasiliev",
+  description: "Front-end, mobile, and backend toolkit: React, React Native, Node.js, DevTools, CI/CD.",
   keywords: [
     "frontend stack",
     "react",
@@ -12,8 +12,8 @@ export const aboutMetadata: PageMetadata = {
     "skills",
   ],
   openGraph: {
-    title: "Навыки и стек — Ruslan Vasiliev",
-    description: "Экосистема инструментов и технологий разработчика.",
+    title: "Skills & Tech Stack — Ruslan Vasiliev",
+    description: "Daily ecosystem of tools and technologies used across web and mobile projects.",
     url: `${siteBaseUrl}/about`,
   },
 };

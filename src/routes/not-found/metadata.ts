@@ -1,6 +1,6 @@
 import type { PageMetadata } from "../../seo/site-metadata";
 
 export const notFoundMetadata: PageMetadata = {
-  title: "Страница не найдена — Ruslan Vasiliev",
-  description: "Мы не нашли такой маршрут. Вернитесь на главную, чтобы продолжить знакомство с портфолио.",
+  title: "Page not found — Ruslan Vasiliev",
+  description: "We could not find this route. Head back to the homepage to continue exploring the portfolio.",
 };

@@ -22,7 +22,7 @@ export const siteBaseUrl = "https://vassrus.dev";
 export const siteMetadata = {
   title: "Ruslan Vasiliev — Front-End Developer",
   description:
-    "Портфолио фронтенд и мобильного разработчика: проекты на React, React Native, интеграции с Firebase и Node.js.",
+    "Portfolio of a front-end and mobile developer: React and React Native projects, Firebase Auth integrations, and Node.js experience.",
   keywords: [
     "Frontend",
     "React",
