@@ -1,10 +1,9 @@
-# Ruslan Vasiliev Portfolio
+# Portfolio of Ruslan Vasiliev
 
-Modern developer portfolio focused on front-end and cross-platform mobile experience.
 
 ## 📌 Description
 
-This version of the portfolio is built on a modern tech stack with an enhanced UI and a structure ready for migration to Next.js.
+A modern developer portfolio built with a cutting-edge tech stack, enhanced UI, and scalable architecture.
 
 ### Frontend
 - React + Vite
