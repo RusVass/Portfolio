@@ -166,8 +166,8 @@ export const profileSections: readonly ProfileSection[] = [
     type: "links",
     links: [
       {
-        label: "GitLab Portfolio",
-        href: "https://gitlab.com/VassRus/portfolio",
+        label: "GitHub Portfolio",
+        href: "https://github.com/RusVass/Portfolio",
       },
     ],
   },
