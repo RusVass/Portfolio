@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Builds
+/dist/
+/.next/
+out/
+/.turbo/
+/.parcel-cache/
+
+# System files
+.DS_Store
+
+# Cache
+.cache/
+.eslintcache
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor settings
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.*
+*.local
+
+# Platform-specific
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.tsbuildinfo
+
+# Hosting configs
+.vercel
+
+# Package managers
+.pnpm-store/
+.npm/
