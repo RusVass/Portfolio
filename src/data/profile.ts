@@ -60,7 +60,7 @@ export type ProfileSection =
 export const heroContent: HeroContent = {
   name: "Ruslan Vasiliev",
   title: "Front-End Developer",
-  avatar: "/stickerMe.webp",
+  avatar: "/3.png",
 };
 
 export const profileSections: readonly ProfileSection[] = [
