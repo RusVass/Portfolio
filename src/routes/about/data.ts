@@ -25,6 +25,9 @@ export type IconName =
   | "reactHookForm"
   | "zustand"
   | "tailwind"
+  | "webpack"
+  | "parcel"
+  | "babel"
   | "yup"
   | "fetch"
   | "rest"
@@ -119,7 +122,7 @@ export const skillCategories: readonly SkillCategory[] = [
       { label: "MongoDB", logo: { kind: "icon", name: "mongodb" } },
       { label: "Strapi CMS", logo: { kind: "icon", name: "strapi" } },
       { label: "WordPress", logo: { kind: "icon", name: "wordpress" } },
-      { label: "Firebase Authentication", logo: { kind: "icon", name: "firebase" } },
+      { label: "Firebase", logo: { kind: "icon", name: "firebase" } },
       { label: "Google Sign-In", logo: { kind: "icon", name: "google" } },
       { label: "AI agents", logo: { kind: "icon", name: "openai" } },
     ],
@@ -128,6 +131,9 @@ export const skillCategories: readonly SkillCategory[] = [
     id: "tools",
     title: "Tools",
     items: [
+      { label: "Webpack", logo: { kind: "icon", name: "webpack" } },
+      { label: "Parcel", logo: { kind: "icon", name: "parcel" } },
+      { label: "Babel", logo: { kind: "icon", name: "babel" } },
       { label: "JetBrains WebStorm", logo: { kind: "icon", name: "webstorm" } },
       { label: "Android Studio", logo: { kind: "icon", name: "androidstudio" } },
       { label: "Xcode", logo: { kind: "icon", name: "xcode" } },
