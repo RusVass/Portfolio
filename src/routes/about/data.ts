@@ -14,6 +14,7 @@ export type IconName =
   | "jira"
   | "postman"
   | "figma"
+  | "framer"
   | "jenkins"
   | "vercel"
   | "axios"
@@ -149,6 +150,7 @@ export const skillCategories: readonly SkillCategory[] = [
       { label: "TestFlight", logo: { kind: "icon", name: "testflight" } },
       { label: "CI/CD", logo: { kind: "icon", name: "cicd" } },
       { label: "Vercel", logo: { kind: "icon", name: "vercel" } },
+      { label: "Framer", logo: { kind: "icon", name: "framer" } },
       { label: "Figma", logo: { kind: "icon", name: "figma" } },
     ],
   },
