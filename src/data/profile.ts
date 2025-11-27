@@ -174,11 +174,11 @@ export const profileSections: readonly ProfileSection[] = [
     type: "links",
     links: [
       {
-        label: "GitLab Portfolio",
+        label: "GitLab",
         href: "https://gitlab.com/VassRus/portfolio",
       },
       {
-        label: "GitHub Portfolio",
+        label: "GitHub",
         href: "https://github.com/RusVass/Portfolio",
       },
     ],
