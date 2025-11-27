@@ -1,4 +1,5 @@
 import "@fontsource/roboto/400.css";
+import { HoverSwitchImage } from "../../components/hover-switch-image";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";
 import {
@@ -194,17 +195,20 @@ function Home(): JSX.Element {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950" />
       <section className="container flex flex-col gap-16 py-20 md:flex-row">
         <aside className="mx-auto flex max-w-xs flex-col items-center gap-6 text-center md:mx-0">
-          <div className="group relative rounded-full bg-secondary/40 p-3 shadow-xl animate-hero-float">
-            <span
-              aria-hidden
-              className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-primary/30 via-transparent to-transparent opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-60"
-            />
-            <img
-              src={heroContent.avatar}
-              alt={`${heroContent.name} avatar`}
-              className="relative h-48 w-48 rounded-full object-cover shadow-2xl ring-2 ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
-            />
-          </div>
+          <HoverSwitchImage
+            wrapperClassName="group relative h-48 w-48 rounded-full bg-secondary/40 p-3 shadow-xl animate-hero-float"
+            overlay={
+              <span
+                aria-hidden
+                className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-primary/30 via-transparent to-transparent opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-60"
+              />
+            }
+            alt={`${heroContent.name} avatar`}
+            className="rounded-full object-cover shadow-2xl ring-2 ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
+            transitionMs={8000}
+            transitionEasing="cubic-bezier(0.1, 0.35, 0, 1)"
+            effect="zoomFade"
+          />
           <div className="space-y-2">
             <p className="text-sm uppercase tracking-[0.35em] text-primary">{heroContent.title}</p>
             <h1 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
