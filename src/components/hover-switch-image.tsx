@@ -91,8 +91,10 @@ export function HoverSwitchImage({
               isActive && assignedClasses.active,
             )}
             style={{
+              transitionProperty: "opacity, transform",
               transitionDuration: `${transitionMs}ms`,
               transitionTimingFunction: transitionEasing,
+              willChange: "opacity, transform",
             }}
           />
         );
