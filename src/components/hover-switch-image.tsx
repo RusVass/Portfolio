@@ -85,10 +85,10 @@ export function HoverSwitchImage({
             alt={isActive ? alt : ""}
             aria-hidden={!isActive}
             className={clsx(
+              className,
               "absolute inset-0 h-full w-full object-cover transition-[opacity,transform]",
               assignedClasses.base,
               isActive && assignedClasses.active,
-              className,
             )}
             style={{
               transitionDuration: `${transitionMs}ms`,
