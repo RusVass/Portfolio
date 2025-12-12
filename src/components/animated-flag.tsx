@@ -13,6 +13,8 @@ function AnimatedFlag({
 }: AnimatedFlagProps): JSX.Element {
   const clipId = "flagClip";
   const filterId = "flagWave";
+  const linearShadeId = "flagLinearShade";
+  const vignetteId = "flagVignette";
 
   return (
     <svg
@@ -34,10 +36,21 @@ function AnimatedFlag({
           </feTurbulence>
           <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24" xChannelSelector="R" yChannelSelector="G" />
         </filter>
+        <linearGradient id={linearShadeId} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="rgba(0,0,0,0.35)" />
+          <stop offset="45%" stopColor="rgba(0,0,0,0.08)" />
+          <stop offset="100%" stopColor="rgba(0,0,0,0.25)" />
+        </linearGradient>
+        <radialGradient id={vignetteId} cx="50%" cy="50%" r="75%">
+          <stop offset="55%" stopColor="rgba(0,0,0,0)" />
+          <stop offset="100%" stopColor="rgba(0,0,0,0.35)" />
+        </radialGradient>
       </defs>
       <g clipPath={`url(#${clipId})`} filter={`url(#${filterId})`}>
         <rect width="128" height="32" fill="#005BBB" />
         <rect y="32" width="128" height="32" fill="#FFD500" />
+        <rect width="128" height="64" fill={`url(#${linearShadeId})`} />
+        <rect width="128" height="64" fill={`url(#${vignetteId})`} />
       </g>
       <rect
         width="128"
