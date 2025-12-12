@@ -86,7 +86,7 @@ export function HoverSwitchImage({
             aria-hidden={!isActive}
             className={clsx(
               className,
-              "absolute inset-0 h-full w-full object-cover transition-[opacity,transform]",
+              "absolute inset-0 z-0 h-full w-full object-cover transition-[opacity,transform]",
               assignedClasses.base,
               isActive && assignedClasses.active,
             )}
