@@ -195,29 +195,51 @@ function ListSectionView({ section }: { section: ListSection }): JSX.Element {
       </CardHeader>
       <CardContent>
         <ul className="grid gap-3 sm:grid-cols-2">
-          {section.items.map(({ label, icon, imageSrc, imageAlt }) => {
+          {section.items.map(({ label, icon, imageSrc, imageAlt, href }) => {
             const iconConfig = icon ? listIconMap[icon] : undefined;
             const Icon = iconConfig?.icon;
             const iconColor = iconConfig?.color;
             const hasImage = Boolean(imageSrc);
+            const anchorTarget = href ? "_blank" : undefined;
+            const anchorRel = href ? "noopener noreferrer" : undefined;
+
+            const visual = hasImage ? (
+              <img
+                src={imageSrc}
+                alt={imageAlt ?? `${label} logo`}
+                className="h-8 w-16 flex-shrink-0 object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            ) : Icon ? (
+              <Icon className="h-4 w-4" aria-hidden style={{ color: iconColor }} />
+            ) : (
+              <span className="h-1.5 w-1.5 rounded-full bg-primary/70" aria-hidden />
+            );
+
+            if (href) {
+              return (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target={anchorTarget}
+                    rel={anchorRel}
+                    aria-label={`${label} official site`}
+                    className="flex items-center gap-2 rounded-lg border border-border/50 bg-secondary/30 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                  >
+                    {visual}
+                    <span>{label}</span>
+                  </a>
+                </li>
+              );
+            }
+
             return (
               <li
                 key={label}
                 className="flex items-center gap-2 rounded-lg border border-border/50 bg-secondary/30 px-4 py-2 text-sm text-muted-foreground"
               >
-                {hasImage ? (
-                  <img
-                    src={imageSrc}
-                    alt={imageAlt ?? `${label} logo`}
-                    className="h-8 w-16 flex-shrink-0 object-contain"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                ) : Icon ? (
-                  <Icon className="h-4 w-4" aria-hidden style={{ color: iconColor }} />
-                ) : (
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary/70" aria-hidden />
-                )}
+                {visual}
                 <span>{label}</span>
               </li>
             );
