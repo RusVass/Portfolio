@@ -406,7 +406,7 @@ function Home(): JSX.Element {
               />
             }
             alt={`${heroContent.name} avatar`}
-            className="rounded-full filter brightness-75 !object-contain !ring-2 !ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2 md:!object-cover"
+            className="rounded-full filter brightness-[0.55] contrast-110 !object-contain !ring-2 !ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2 md:!object-cover"
             transitionMs={8000}
             transitionEasing="cubic-bezier(0.1, 0.35, 0, 1)"
             effect="zoomFade"
