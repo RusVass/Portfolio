@@ -398,21 +398,15 @@ function Home(): JSX.Element {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Ukraine</p>
           </div>
           <HoverSwitchImage
-            wrapperClassName="group relative h-48 w-48 rounded-full bg-secondary/40 p-3 shadow-[0_25px_80px_rgba(8,15,40,0.85)] animate-hero-float"
+            wrapperClassName="group relative h-48 w-48 rounded-full bg-secondary/40 p-3 shadow-xl animate-hero-float"
             overlay={
-              <>
-                <span
-                  aria-hidden
-                  className="pointer-events-none absolute inset-0 z-10 rounded-full bg-slate-950/45 mix-blend-multiply transition-opacity duration-700 group-hover:bg-slate-950/60"
-                />
-                <span
-                  aria-hidden
-                  className="pointer-events-none absolute inset-0 z-20 rounded-full bg-gradient-to-tr from-primary/35 via-transparent to-transparent opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-70"
-                />
-              </>
+              <span
+                aria-hidden
+                className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-primary/30 via-transparent to-transparent opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-60"
+              />
             }
             alt={`${heroContent.name} avatar`}
-            className="rounded-full !bg-slate-900/80 !object-contain !ring-2 !ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2 md:!object-cover"
+            className="rounded-full !object-contain !ring-2 !ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2 md:!object-cover"
             transitionMs={8000}
             transitionEasing="cubic-bezier(0.1, 0.35, 0, 1)"
             effect="zoomFade"
