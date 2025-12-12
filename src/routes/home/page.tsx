@@ -358,10 +358,13 @@ function Section({ section }: SectionProps): JSX.Element {
             const Icon = iconConfig?.icon;
             const iconColor = iconConfig?.color;
             return (
-              <Button key={href} asChild variant="outline" className={Icon ? "gap-2" : undefined}>
-                <a href={href} target="_blank" rel="noopener noreferrer" aria-label={Icon ? label : undefined}>
-                  {Icon ? <Icon className="h-4 w-4" aria-hidden style={{ color: iconColor }} /> : null}
-                  <span className={Icon ? "sr-only sm:not-sr-only" : undefined}>{label}</span>
+              <Button key={href} asChild variant="outline" size="icon">
+                <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+                  {Icon ? (
+                    <Icon className="h-4 w-4" aria-hidden style={{ color: iconColor }} />
+                  ) : (
+                    <span className="sr-only">{label}</span>
+                  )}
                 </a>
               </Button>
             );
