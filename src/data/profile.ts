@@ -67,6 +67,7 @@ export interface KeyValueItem {
   icon?: KeyValueIcon;
   imageSrc?: string;
   imageAlt?: string;
+  href?: string;
 }
 
 export interface KeyValueSection extends BaseSection {
@@ -186,12 +187,14 @@ export const profileSections: readonly ProfileSection[] = [
         value: "Native",
         imageSrc: "/flags/ua.svg",
         imageAlt: "Flag of Ukraine",
+        href: "https://uk.wikipedia.org/wiki/Україна",
       },
       {
         label: "English",
         value: "Upper-Intermediate",
         imageSrc: "/flags/gb.svg",
         imageAlt: "Flag of United Kingdom",
+        href: "https://en.wikipedia.org/wiki/United_Kingdom",
       },
     ],
   },

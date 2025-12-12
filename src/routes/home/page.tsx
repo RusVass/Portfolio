@@ -269,15 +269,16 @@ function Section({ section }: SectionProps): JSX.Element {
         </CardHeader>
         <CardContent>
           <dl className="grid gap-3 sm:grid-cols-2">
-            {section.items.map(({ label, value, icon, imageSrc, imageAlt }) => {
+            {section.items.map(({ label, value, icon, imageSrc, imageAlt, href }) => {
               const iconConfig = icon ? keyValueIconMap[icon] : undefined;
               const Icon = iconConfig?.icon;
               const iconColor = iconConfig?.color;
               const hasImage = Boolean(imageSrc);
-              const contactLink = getContactLink(label, value);
-              const linkHref = contactLink?.href ?? null;
-              const anchorTarget = contactLink?.external ? "_blank" : undefined;
-              const anchorRel = contactLink?.external ? "noopener noreferrer" : undefined;
+              const contactLink = href ? null : getContactLink(label, value);
+              const linkHref = href ?? contactLink?.href ?? null;
+              const isExternalLink = href ? true : contactLink?.external ?? false;
+              const anchorTarget = isExternalLink ? "_blank" : undefined;
+              const anchorRel = anchorTarget ? "noopener noreferrer" : undefined;
 
               return (
                 <div
@@ -308,7 +309,12 @@ function Section({ section }: SectionProps): JSX.Element {
                       )
                     ) : null}
                     {linkHref ? (
-                      <a href={linkHref} target={anchorTarget} rel={anchorRel} className="hover:text-primary/80">
+                      <a
+                        href={linkHref}
+                        target={anchorTarget}
+                        rel={anchorRel}
+                        className="no-underline transition-colors hover:text-primary/80"
+                      >
                         {label}
                       </a>
                     ) : (
@@ -321,7 +327,7 @@ function Section({ section }: SectionProps): JSX.Element {
                         href={linkHref}
                         target={anchorTarget}
                         rel={anchorRel}
-                        className="text-primary underline-offset-4 hover:text-primary/80 hover:underline"
+                        className="text-primary no-underline transition-colors hover:text-primary/80"
                       >
                         {value}
                       </a>
