@@ -14,14 +14,58 @@ export interface TextSection extends BaseSection {
   content: string;
 }
 
+export type ListIconKey =
+  | "react"
+  | "redux"
+  | "reactNative"
+  | "formik"
+  | "materialUi"
+  | "bootstrap"
+  | "html"
+  | "css"
+  | "gulp"
+  | "node"
+  | "express"
+  | "mongodb"
+  | "cicd"
+  | "git"
+  | "yup"
+  | "webstorm"
+  | "androidStudio"
+  | "xcode"
+  | "vscode"
+  | "chrome"
+  | "postman"
+  | "github"
+  | "gitlab"
+  | "jira"
+  | "jenkins"
+  | "firebase"
+  | "testflight"
+  | "vercel"
+  | "framer"
+  | "figma";
+
+export interface ListItem {
+  label: string;
+  icon?: ListIconKey;
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
 export interface ListSection extends BaseSection {
   type: "list";
-  items: string[];
+  items: readonly ListItem[];
 }
+
+export type KeyValueIcon = "phone" | "email" | "location" | "telegram";
 
 export interface KeyValueItem {
   label: string;
   value: string;
+  icon?: KeyValueIcon;
+  imageSrc?: string;
+  imageAlt?: string;
 }
 
 export interface KeyValueSection extends BaseSection {
@@ -40,9 +84,12 @@ export interface ExperienceSection extends BaseSection {
   entries: ExperienceEntry[];
 }
 
+export type LinkIcon = "telegram" | "gitlab" | "github" | "linkedin" | "project";
+
 export interface LinkItem {
   label: string;
   href: string;
+  icon?: LinkIcon;
 }
 
 export interface LinksSection extends BaseSection {
@@ -76,10 +123,10 @@ export const profileSections: readonly ProfileSection[] = [
     title: "Contact",
     type: "keyValue",
     items: [
-      { label: "Mobile", value: "+38 067 679 51 56" },
-      { label: "E-mail", value: "it.vasiliv@gmail.com" },
-      { label: "Residence", value: "Kiev, Ukraine" },
-      { label: "Telegram", value: "@RuslanVasiliev" },
+      { label: "Mobile", value: "+38 067 679 51 56", icon: "phone" },
+      { label: "E-mail", value: "it.vasiliev@gmail.com", icon: "email" },
+      { label: "Residence", value: "Kiev, Ukraine", icon: "location" },
+      { label: "Telegram", value: "@RuslanVasiliev", icon: "telegram" },
     ],
   },
   {
@@ -87,21 +134,21 @@ export const profileSections: readonly ProfileSection[] = [
     title: "Tech Skills",
     type: "list",
     items: [
-      "React",
-      "Redux Toolkit",
-      "React Native",
-      "Formik",
-      "Material UI",
-      "Bootstrap",
-      "HTML",
-      "CSS/SCSS",
-      "Gulp",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "CI/CD",
-      "Git",
-      "Yup",
+      { label: "React", icon: "react" },
+      { label: "Redux Toolkit", icon: "redux" },
+      { label: "React Native", icon: "reactNative" },
+      { label: "Formik", icon: "formik" },
+      { label: "Material UI", icon: "materialUi" },
+      { label: "Bootstrap", icon: "bootstrap" },
+      { label: "HTML", icon: "html" },
+      { label: "CSS/SCSS", icon: "css" },
+      { label: "Gulp", icon: "gulp" },
+      { label: "Node.js", icon: "node" },
+      { label: "Express.js", icon: "express" },
+      { label: "MongoDB", icon: "mongodb" },
+      { label: "CI/CD", icon: "cicd" },
+      { label: "Git", icon: "git" },
+      { label: "Yup", icon: "yup" },
     ],
   },
   {
@@ -109,23 +156,23 @@ export const profileSections: readonly ProfileSection[] = [
     title: "Tools",
     type: "list",
     items: [
-      "JetBrains WebStorm",
-      "Android Studio",
-      "Xcode",
-      "VS Code",
-      "Chrome DevTools",
-      "Postman",
-      "Git",
-      "GitHub",
-      "GitLab",
-      "Jira",
-      "Jenkins",
-      "Firebase Console",
-      "TestFlight",
-      "CI/CD",
-      "Vercel",
-      "Framer",
-      "Figma",
+      { label: "JetBrains WebStorm", icon: "webstorm" },
+      { label: "Android Studio", icon: "androidStudio" },
+      { label: "Xcode", icon: "xcode" },
+      { label: "VS Code", icon: "vscode" },
+      { label: "Chrome DevTools", icon: "chrome" },
+      { label: "Postman", icon: "postman" },
+      { label: "Git", icon: "git" },
+      { label: "GitHub", icon: "github" },
+      { label: "GitLab", icon: "gitlab" },
+      { label: "Jira", icon: "jira" },
+      { label: "Jenkins", icon: "jenkins" },
+      { label: "Firebase Console", icon: "firebase" },
+      { label: "TestFlight", icon: "testflight" },
+      { label: "CI/CD", icon: "cicd" },
+      { label: "Vercel", icon: "vercel" },
+      { label: "Framer", icon: "framer" },
+      { label: "Figma", icon: "figma" },
     ],
   },
   {
@@ -133,8 +180,18 @@ export const profileSections: readonly ProfileSection[] = [
     title: "Languages",
     type: "keyValue",
     items: [
-      { label: "Ukrainian", value: "Native" },
-      { label: "English", value: "Upper-Intermediate" },
+      {
+        label: "Ukrainian",
+        value: "Native",
+        imageSrc: "/flags/ua.svg",
+        imageAlt: "Flag of Ukraine",
+      },
+      {
+        label: "English",
+        value: "Upper-Intermediate",
+        imageSrc: "/flags/gb.svg",
+        imageAlt: "Flag of United Kingdom",
+      },
     ],
   },
   {
@@ -142,10 +199,26 @@ export const profileSections: readonly ProfileSection[] = [
     title: "Courses",
     type: "list",
     items: [
-      "2025 – English (Cambridge Assessment)",
-      "2024 – Front-End (DAN.IT)",
-      "2024 – TypeScript (Hillel IT School)",
-      "2023 – JavaScript Automation (Hillel IT School)",
+      {
+        label: "2025 – English (Cambridge Assessment)",
+        imageSrc: "/cambridge-logo.svg",
+        imageAlt: "Cambridge Assessment logo",
+      },
+      {
+        label: "2024 – Front-End (DAN.IT)",
+        imageSrc: "/danit-logo.svg",
+        imageAlt: "DAN.IT Education logo",
+      },
+      {
+        label: "2024 – TypeScript (Hillel IT School)",
+        imageSrc: "/hillel-logo.svg",
+        imageAlt: "Hillel IT School logo",
+      },
+      {
+        label: "2023 – JavaScript Automation (Hillel IT School)",
+        imageSrc: "/hillel-logo.svg",
+        imageAlt: "Hillel IT School logo",
+      },
     ],
   },
   {
@@ -183,14 +256,27 @@ export const profileSections: readonly ProfileSection[] = [
       {
         label: "GitLab",
         href: "https://gitlab.com/VassRus/portfolio",
+        icon: "gitlab",
+      },
+      {
+        label: "Telegram",
+        href: "https://t.me/RuslanVasiliev",
+        icon: "telegram",
       },
       {
         label: "GitHub",
         href: "https://github.com/RusVass/Portfolio",
+        icon: "github",
+      },
+      {
+        label: "Project",
+        href: "https://snapgram-app-mu.vercel.app/",
+        icon: "project",
       },
       {
         label: "LinkedIn",
         href: "https://www.linkedin.com/in/ruslan-vasiliev-334a5419a/",
+        icon: "linkedin",
       },
     ],
   },

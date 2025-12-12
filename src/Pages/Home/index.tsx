@@ -54,9 +54,12 @@ function ListSectionView({ section }: { section: ListSection }): JSX.Element {
       </CardHeader>
       <CardContent>
         <ul className="grid gap-3 sm:grid-cols-2">
-          {section.items.map((item) => (
-            <li key={item} className="rounded-lg border border-border/50 bg-secondary/30 px-4 py-2 text-sm text-muted-foreground">
-              {item}
+          {section.items.map(({ label }) => (
+            <li
+              key={label}
+              className="rounded-lg border border-border/50 bg-secondary/30 px-4 py-2 text-sm text-muted-foreground"
+            >
+              {label}
             </li>
           ))}
         </ul>

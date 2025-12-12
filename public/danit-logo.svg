@@ -1,0 +1,13 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DAN.IT Education">
+  <defs>
+    <linearGradient id="danitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#20E3B2"/>
+      <stop offset="45%" stop-color="#38A4F8"/>
+      <stop offset="100%" stop-color="#2E2BD0"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="80" rx="14" fill="url(#danitGradient)"/>
+  <text x="20" y="42" fill="#F6F8FF" font-size="34" font-family="Inter, 'Segoe UI', sans-serif" font-weight="600">[DAN.IT]</text>
+  <text x="20" y="63" fill="#F6F8FF" font-size="18" font-family="Inter, 'Segoe UI', sans-serif" letter-spacing="2">EDUCATION</text>
+</svg>
+

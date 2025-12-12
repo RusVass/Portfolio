@@ -29,5 +29,5 @@ export const appRoutes = {
   },
 } as const satisfies Record<string, AppRoute>;
 
-export const navigationRoutes: readonly AppRoute[] = [appRoutes.home, appRoutes.about] as const;
+export const navigationRoutes: readonly AppRoute[] = [appRoutes.about] as const;
 

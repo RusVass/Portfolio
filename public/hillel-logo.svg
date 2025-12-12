@@ -1,0 +1,10 @@
+<svg width="200" height="70" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hillel IT School">
+  <rect width="200" height="70" rx="10" fill="#0A4595"/>
+  <g fill="#F5F7FB" font-family="Inter, 'Segoe UI', sans-serif" font-weight="600">
+    <text x="20" y="35" font-size="32">hillel</text>
+    <text x="20" y="58" font-size="18" font-weight="500">IT school</text>
+  </g>
+  <path d="M48 14c2.4 3.2 2.4 6.4 0 9.6" stroke="#6CF38D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M57 14c2.4 3.2 2.4 6.4 0 9.6" stroke="#6CF38D" stroke-width="4" stroke-linecap="round"/>
+</svg>
+
