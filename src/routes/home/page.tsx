@@ -207,7 +207,7 @@ function ListSectionView({ section }: { section: ListSection }): JSX.Element {
               <img
                 src={imageSrc}
                 alt={imageAlt ?? `${label} logo`}
-                className="h-8 w-16 flex-shrink-0 object-contain"
+                className="h-8 w-16 flex-shrink-0 self-start object-contain"
                 loading="lazy"
                 decoding="async"
               />
@@ -225,7 +225,7 @@ function ListSectionView({ section }: { section: ListSection }): JSX.Element {
                     target={anchorTarget}
                     rel={anchorRel}
                     aria-label={`${label} official site`}
-                    className="flex items-center gap-2 rounded-lg border border-border/50 bg-secondary/30 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                    className="flex items-start gap-2 rounded-lg border border-border/50 bg-secondary/30 px-4 py-2 text-left text-sm font-medium text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
                   >
                     {visual}
                     <span>{label}</span>
@@ -237,7 +237,7 @@ function ListSectionView({ section }: { section: ListSection }): JSX.Element {
             return (
               <li
                 key={label}
-                className="flex items-center gap-2 rounded-lg border border-border/50 bg-secondary/30 px-4 py-2 text-sm text-muted-foreground"
+                className="flex items-start gap-2 rounded-lg border border-border/50 bg-secondary/30 px-4 py-2 text-left text-sm text-muted-foreground"
               >
                 {visual}
                 <span>{label}</span>
