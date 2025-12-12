@@ -412,7 +412,7 @@ function Home(): JSX.Element {
               </>
             }
             alt={`${heroContent.name} avatar`}
-            className="rounded-full object-cover ring-2 ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
+            className="rounded-full bg-slate-900/80 object-contain ring-2 ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2 md:object-cover"
             transitionMs={8000}
             transitionEasing="cubic-bezier(0.1, 0.35, 0, 1)"
             effect="zoomFade"
