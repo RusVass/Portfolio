@@ -108,7 +108,7 @@ export type ProfileSection =
 
 export const heroContent: HeroContent = {
   name: "Ruslan Vasiliev",
-  title: "Front-End Developer",
+  title: "Full Stack Developer",
   avatar: "/3.png",
 };
 
@@ -118,7 +118,7 @@ export const profileSections: readonly ProfileSection[] = [
     title: "Summary",
     type: "text",
     content:
-      "Front-End, Mobile & Web Developer with 1+ years of experience building modern, high-performance web and cross-platform mobile applications using React, React Native CLI, Redux Toolkit, and Next.js. Proficient in Material UI, React Hook Form, and Tailwind CSS, with hands-on experience integrating Firebase Authentication and Google Sign-In. Skilled in creating reusable components, managing complex state, and connecting applications to REST APIs. Experienced in working with AI agents and automation tools. Familiar with backend development using Node.js, Express.js, and MongoDB, as well as testing with Jest.",
+      "Full Stack Developer with 1+ years of experience building web and mobile applications using React, TypeScript, and Next.js. Actively use AI-assisted development tools like Cursor and GitHub Copilot to accelerate delivery and improve code quality. Focus on clean, maintainable, and scalable code. Experienced in backend integration with Supabase and Firebase, including authentication and API development. Skilled in building responsive UI components with Material UI and Tailwind CSS. Comfortable in startup environments and collaborating with English-speaking clients.",
   },
   {
     id: "contact",
@@ -238,11 +238,12 @@ export const profileSections: readonly ProfileSection[] = [
         company: "TechWave Solutions",
         role: "Front-End, Mobile & Web Developer (React / React Native)",
         achievements: [
-          "Delivered React + TypeScript products with reusable UI kits, shadcn/ui, and Tailwind.",
-          "Implemented Next.js App Router features, metadata, and SEO-first layouts.",
-          "Integrated REST APIs with Axios/Fetch, handling auth, errors, and caching.",
-          "Shipped React Native apps for iOS/Android with Firebase auth and React Navigation.",
-          "Collaborated on Node/Express endpoints and maintained Jest coverage for core flows.",
+          "Develop and maintain production web applications using React and TypeScript",
+          "Build reusable UI components with Tailwind CSS and shadcn/ui, ensuring responsive layouts",
+          "Implement Next.js App Router with server components, metadata, and SEO optimization",
+          "Integrate REST APIs with Axios/Fetch, managing authentication and error handling",
+          "Develop cross-platform mobile applications using React Native CLI with Firebase auth",
+          "Collaborate on backend features using Node.js, Express.js, and database integrations",
         ],
       },
     ],
