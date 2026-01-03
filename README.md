@@ -1,57 +1,183 @@
-# Portfolio of Ruslan Vasiliev
+# Portfolio of Ruslan Vasiliev - Full Stack Developer
 
+[![Vercel Deployment](https://vercel.com/button)](https://portfolio-livid-pi-0ez0pe4nai.vercel.app/)
 
 ## 📌 Description
 
-A modern developer portfolio built with a cutting-edge tech stack, enhanced UI, and scalable architecture.
+Modern Full Stack Developer portfolio showcasing expertise in React, TypeScript, Next.js, and backend technologies. Features automated code quality checks, comprehensive testing, and continuous deployment.
 
-### Frontend
-- React + Vite
-- Strict TypeScript with modular structure (`routes/*`, `components/*`)
-- Tailwind CSS with custom animations and theme extensions
+### Frontend & Full Stack
+- React 18 + Vite (TypeScript strict mode)
+- Next.js App Router experience
+- Modular architecture (`routes/*`, `components/*`, `layouts/*`)
+- Tailwind CSS + shadcn/ui component system
+- Custom animations and responsive design
 
-### UI/UX
-- shadcn/ui based cards and layout primitives
-- Animated developer avatar and floating gradient background
-- Dynamic hover effects with glow around tech stack items
+### Backend Integration
+- Supabase & Firebase for database and authentication
+- REST API integration with Axios/Fetch
+- Node.js + Express.js experience
+
+### AI-Powered Development
+- Cursor & GitHub Copilot for accelerated development
+- Automated code quality and refactoring
+- AI-assisted problem solving and debugging
 
 ### Content & Data
-- Profile and contacts stored in `src/data/profile.ts` for easy localization
-- Automatic detection of contact types (`tel:`, `mailto:`, `t.me`)
+- Profile data in `src/data/profile.ts` (easy localization)
+- Automatic contact link detection (`tel:`, `mailto:`, `t.me`)
+- SEO-optimized metadata and routing
 
-### Tooling & Quality
-- ESLint (TypeScript + React)
-- Vitest + Testing Library smoke tests
-- `npm run build` produces optimized production bundle
+### Quality Assurance
+- **ESLint** (TypeScript + React + custom rules)
+- **Vitest** + Testing Library (4 comprehensive tests)
+- **Husky Git Hooks** - automated pre-commit/pre-push checks
+- Code coverage reporting
 
-### CI/CD Ready
-- `.gitignore` covers build artifacts, caches, IDE files
-- GitLab pipeline can run `lint`, `test`, `build` stages out of the box
+### CI/CD & Deployment
+- **Vercel** automatic deployment on push to main
+- Git hooks ensure quality before commits/pushes
+- Optimized production builds with code splitting
 
-## 🚀 Scripts
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation & Setup
 ```bash
-npm run dev      # start local dev server
-npm run lint     # lint the project (ESLint)
-npm run test     # run Vitest tests
-npm run build    # production build
+# Clone repository
+git clone https://github.com/RusVass/Portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-## 📂 Project Structure (core)
+### Available Scripts
+```bash
+npm run dev          # Start local dev server (Vite)
+npm run build        # Production build (optimized bundle)
+npm run preview      # Preview production build locally
+npm run lint         # Run ESLint (code quality check)
+npm run test         # Run Vitest unit tests
+npm run test:watch   # Run tests in watch mode
+npm run test:coverage # Run tests with coverage report
+```
+
+### Git Hooks (Husky)
+Project uses **automated code quality checks**:
+- **Pre-commit**: Runs ESLint + tests before every commit
+- **Pre-push**: Runs ESLint + tests before every push
+- Hooks prevent commits/pushes with failing checks
+
+*Note: If hooks fail, fix issues and commit again*
+
+## 📂 Project Structure
 ```
 src/
-  components/        reusable UI pieces (header, cards, loaders)
-  data/              profile content (summary, skills, contacts)
-  layouts/           shared layout components (root layout)
-  routes/            page-level components (home, about, not-found)
-  seo/               metadata configuration
-  styles/            global Tailwind entry
-  hooks/             custom hooks (page metadata)
+├── components/        # Reusable UI components
+│   ├── ui/           # shadcn/ui base components
+│   └── page-loader/  # Loading states
+├── data/             # Static data (profile, contacts)
+├── layouts/          # Shared layout components
+├── routes/           # Page-level components
+│   ├── home/         # Homepage
+│   ├── about/        # About page
+│   └── not-found/    # 404 page
+├── hooks/            # Custom React hooks
+├── lib/              # Utility functions
+├── seo/              # SEO metadata
+└── styles/           # Global styles
 ```
 
-## 🛠 Technologies
-- React 18, React Router
-- TypeScript strict mode
-- Tailwind CSS + custom animations
-- shadcn/ui style system
-- Vitest + Testing Library
+## 🚀 Deployment
+
+### Vercel (Automatic)
+Project is configured for **automatic deployment** on Vercel:
+- Push to `main` branch → automatic deploy
+- Production URL: https://portfolio-livid-pi-0ez0pe4nai.vercel.app/
+
+### Manual Deployment
+```bash
+# Build for production
+npm run build
+
+# Deploy to Vercel
+vercel --prod
+```
+
+## 🤝 Contributing
+
+1. **Fork** the repository
+2. **Clone** your fork: `git clone https://github.com/YOUR_USERNAME/Portfolio.git`
+3. **Create** feature branch: `git checkout -b feature/amazing-feature`
+4. **Install** dependencies: `npm install`
+5. **Make** changes and test: `npm run test`
+6. **Commit** changes: `git commit -m 'Add amazing feature'`
+7. **Push** to branch: `git push origin feature/amazing-feature`
+8. **Open** Pull Request
+
+### Development Guidelines
+- Follow TypeScript strict mode
+- Write tests for new features
+- Ensure ESLint passes
+- Keep commits atomic and descriptive
+- Use conventional commit messages
+
+## 📞 Contact
+
+**Ruslan Vasiliev** - Full Stack Developer
+
+- **Email**: it.vasiliev@gmail.com
+- **Telegram**: [@RuslanVasiliev](https://t.me/RuslanVasiliev)
+- **LinkedIn**: [linkedin.com/in/ruslan-vasiliev](https://www.linkedin.com/in/ruslan-vasiliev-334a5419a/)
+- **GitHub**: [github.com/RusVass](https://github.com/RusVass)
+- **Portfolio**: [portfolio-livid-pi-0ez0pe4nai.vercel.app](https://portfolio-livid-pi-0ez0pe4nai.vercel.app/)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+⭐ **Star this repo** if you found it helpful!
+
+## 🛠 Tech Stack
+
+### Frontend
+- **React 18** - Modern component-based UI
+- **TypeScript** - Strict type safety
+- **Vite** - Fast build tool and dev server
+- **React Router** - Client-side routing
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - High-quality component library
+- **Radix UI** - Accessible UI primitives
+
+### Backend & Database
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web application framework
+- **Supabase** - Open source Firebase alternative
+- **Firebase** - Authentication & real-time database
+- **MongoDB** - NoSQL database
+
+### Development Tools
+- **Cursor** - AI-powered code editor
+- **GitHub Copilot** - AI code completion
+- **ESLint** - Code linting and formatting
+- **Vitest** - Fast unit testing framework
+- **Testing Library** - Component testing utilities
+- **Husky** - Git hooks automation
+- **Vercel** - Deployment platform
+
+### Languages & Skills
+- **JavaScript/TypeScript** - Primary languages
+- **HTML5/CSS3** - Web fundamentals
+- **SQL** - Database queries
+- **REST APIs** - Backend communication
+- **Git** - Version control
 
