@@ -4,7 +4,7 @@
 
 ## 📌 Description
 
-Modern Full Stack Developer portfolio showcasing expertise in React, TypeScript, Next.js, and backend technologies. Features automated code quality checks, comprehensive testing, and continuous deployment.
+Full Stack Developer portfolio showcasing expertise in React, TypeScript, Next.js, and backend technologies. Features automated code quality checks, comprehensive testing, and continuous deployment.
 
 ### Frontend & Full Stack
 - React 18 + Vite (TypeScript strict mode)
