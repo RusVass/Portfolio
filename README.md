@@ -27,6 +27,7 @@ Full Stack Developer portfolio showcasing expertise in React, TypeScript, Next.j
 - Profile data in `src/data/profile.ts` (easy localization)
 - Automatic contact link detection (`tel:`, `mailto:`, `t.me`)
 - SEO-optimized metadata and routing
+- Responsive design for all devices
 
 ### Quality Assurance
 - **ESLint** (TypeScript + React + custom rules)
@@ -38,6 +39,20 @@ Full Stack Developer portfolio showcasing expertise in React, TypeScript, Next.j
 - **Vercel** automatic deployment on push to main
 - Git hooks ensure quality before commits/pushes
 - Optimized production builds with code splitting
+
+## 🚀 Featured Projects
+
+### Portfolio Website (Current)
+- **Tech**: React, TypeScript, Vite, Tailwind CSS, shadcn/ui
+- **Features**: Responsive design, automated testing, CI/CD pipeline
+- **Live**: [portfolio-livid-pi-0ez0pe4nai.vercel.app](https://portfolio-livid-pi-0ez0pe4nai.vercel.app/)
+
+### Key Achievements
+- ✅ Automated code quality with ESLint + Husky pre-commit hooks
+- ✅ Comprehensive test suite with Vitest (4 passing tests)
+- ✅ Modern development workflow with AI tools (Cursor, GitHub Copilot)
+- ✅ Production-ready deployment with Vercel
+- ✅ Full TypeScript implementation with strict mode
 
 ## 🚀 Quick Start
 
@@ -129,6 +144,20 @@ vercel --prod
 - Keep commits atomic and descriptive
 - Use conventional commit messages
 
+## 🎯 Experience & Skills
+
+### Professional Experience
+- **1+ years** of hands-on experience in modern web development
+- **Full Stack Development** with React, TypeScript, and backend integration
+- **AI-Assisted Development** using Cursor and GitHub Copilot
+- **Quality Assurance** with automated testing and code reviews
+
+### Core Competencies
+- **Frontend**: React, TypeScript, Next.js, Tailwind CSS
+- **Backend**: Node.js, Express.js, Supabase, Firebase
+- **Tools**: Git, ESLint, Vitest, Vite, Vercel
+- **Methodologies**: Clean Code, TDD, CI/CD
+
 ## 📞 Contact
 
 **Ruslan Vasiliev** - Full Stack Developer
@@ -142,6 +171,21 @@ vercel --prod
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## 🚧 Roadmap
+
+- [ ] Add dark/light theme toggle
+- [ ] Implement blog section
+- [ ] Add project showcase with filtering
+- [ ] Integrate contact form with validation
+- [ ] Add performance monitoring
+- [ ] Implement PWA features
+
+## 📈 Stats
+
+![GitHub stars](https://img.shields.io/github/stars/RusVass/Portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/RusVass/Portfolio?style=social)
+![Vercel](https://vercel.com/button)
 
 ---
 
