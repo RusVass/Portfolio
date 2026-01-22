@@ -118,7 +118,7 @@ export const profileSections: readonly ProfileSection[] = [
     title: "Summary",
     type: "text",
     content:
-      "Full Stack Developer with 1+ years of experience building web and mobile applications using React, TypeScript, and Next.js. Actively use AI-assisted development tools like Cursor and GitHub Copilot to accelerate delivery and improve code quality. Focus on clean, maintainable, and scalable code. Experienced in backend integration with Supabase and Firebase, including authentication and API development. Skilled in building responsive UI components with Material UI and Tailwind CSS. Comfortable in startup environments and collaborating with English-speaking clients.",
+      "Full Stack Developer with 1+ years of hands-on experience building and maintaining real-world web and cross-platform applications using React, TypeScript, and Next.js.\nDevelop, improve, and ship production features for web and mobile products.\nUse AI-assisted tools such as Cursor and GitHub Copilot daily to speed up development, refactoring, and debugging.\nDesign and implement backend solutions with Supabase and Firebase, including authentication, database schemas, and API integrations.\nBuild reusable UI components, manage complex application state with Redux Toolkit, and deliver responsive interfaces with Material UI and Tailwind CSS.\nCreate REST APIs using Node.js and Express.js.\nWrite clean, maintainable, and scalable code.\nWork in product-oriented startup environments and collaborate directly with English-speaking clients.",
   },
   {
     id: "contact",
@@ -236,14 +236,18 @@ export const profileSections: readonly ProfileSection[] = [
     entries: [
       {
         company: "TechWave Solutions",
-        role: "Front-End, Mobile & Web Developer (React / React Native)",
+        role: "Front-End / Full Stack Developer",
         achievements: [
-          "Develop and maintain production web applications using React and TypeScript",
-          "Build reusable UI components with Tailwind CSS and shadcn/ui, ensuring responsive layouts",
-          "Implement Next.js App Router with server components, metadata, and SEO optimization",
-          "Integrate REST APIs with Axios/Fetch, managing authentication and error handling",
-          "Develop cross-platform mobile applications using React Native CLI with Firebase auth",
-          "Collaborate on backend features using Node.js, Express.js, and database integrations",
+          "Develop and maintain production web and mobile applications using React, TypeScript, Next.js, and React Native",
+          "Build reusable UI components with Tailwind CSS, shadcn/ui, and Material UI",
+          "Implement routing, SEO, forms, dashboards, and complex UI features",
+          "Integrate REST APIs using Axios and Fetch",
+          "Develop backend features with Node.js and Express.js",
+          "Work with Supabase and Firebase for authentication, databases, and user management",
+          "Create API endpoints and manage database schemas",
+          "Build cross-platform mobile apps for iOS and Android",
+          "Integrate Firebase Authentication and Google Sign-In",
+          "Write unit tests with Jest and participate in code reviews",
         ],
       },
     ],
