@@ -267,6 +267,11 @@ export const profileSections: readonly ProfileSection[] = [
         href: "https://github.com/RusVass",
         icon: "github",
       },
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/ruslan-vasiliev-dev/",
+        icon: "linkedin",
+      },
     ],
   },
 ] as const;
