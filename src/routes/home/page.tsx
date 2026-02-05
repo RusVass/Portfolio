@@ -35,7 +35,6 @@ import {
 import { TbBrandVscode } from "react-icons/tb";
 import { FiPhone } from "react-icons/fi";
 import { AnimatedFlag } from "../../components/animated-flag";
-import { HoverSwitchImage } from "../../components/hover-switch-image";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";
 import {
@@ -400,20 +399,17 @@ function Home(): JSX.Element {
             <AnimatedFlag className="h-14 w-28 drop-shadow-[0_6px_20px_rgba(15,23,42,0.6)]" />
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Ukraine</p>
           </div>
-          <HoverSwitchImage
-            wrapperClassName="group relative h-48 w-48 rounded-full bg-secondary/40 p-3 shadow-xl animate-hero-float"
-            overlay={
-              <span
-                aria-hidden
-                className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-primary/30 via-transparent to-transparent opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-60"
-              />
-            }
-            alt={`${heroContent.name} avatar`}
-            className="rounded-full filter brightness-[0.55] contrast-110 !object-contain !ring-2 !ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2 md:!object-cover"
-            transitionMs={8000}
-            transitionEasing="cubic-bezier(0.1, 0.35, 0, 1)"
-            effect="zoomFade"
-          />
+          <div className="group relative h-48 w-48 rounded-full bg-secondary/40 p-3 shadow-xl animate-hero-float">
+            <span
+              aria-hidden
+              className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-primary/30 via-transparent to-transparent opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-60"
+            />
+            <img
+              src={heroContent.avatar}
+              alt={`${heroContent.name} avatar`}
+              className="h-full w-full rounded-full filter brightness-[0.55] contrast-110 object-contain ring-2 ring-primary/20 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2 md:object-cover"
+            />
+          </div>
           <div className="space-y-2">
             <p className="text-sm uppercase tracking-[0.35em] text-primary">{heroContent.title}</p>
             <h1 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
