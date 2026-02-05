@@ -259,28 +259,13 @@ export const profileSections: readonly ProfileSection[] = [
     links: [
       {
         label: "GitLab",
-        href: "https://gitlab.com/VassRus/portfolio",
+        href: "https://gitlab.com/VassRus",
         icon: "gitlab",
       },
       {
-        label: "Telegram",
-        href: "https://t.me/RuslanVasiliev",
-        icon: "telegram",
-      },
-      {
         label: "GitHub",
-        href: "https://github.com/RusVass/Portfolio",
+        href: "https://github.com/RusVass",
         icon: "github",
-      },
-      {
-        label: "Project",
-        href: "https://snapgram-app-mu.vercel.app/",
-        icon: "project",
-      },
-      {
-        label: "LinkedIn",
-        href: "https://www.linkedin.com/in/ruslan-vasiliev-334a5419a/",
-        icon: "linkedin",
       },
     ],
   },
